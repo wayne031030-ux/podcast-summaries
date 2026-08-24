@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>什麼是成長型心態：瞬間改變學習能力的方法！｜JR LEE</title>
+<style>
+@font-face{font-family:'Cubic11';src:url('../assets/Cubic-11.ttf') format('truetype');font-display:swap}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Cubic11',"Noto Sans TC",monospace;color:#2b2b2b;line-height:1.9;
+ min-height:100vh;background:#6f5540;-webkit-font-smoothing:none}
+/* 背景場景層：與人物/公仔同機制，手機捲動不脫鉤 */
+.bg{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:-1;pointer-events:none;image-rendering:pixelated}
+body::before{content:"";position:fixed;inset:0;background:rgba(255,255,255,0);
+ pointer-events:none;z-index:1;transition:background .4s}
+body.theme-night::before{background:rgba(18,14,38,.38)}
+body.theme-dusk::before{background:rgba(60,30,50,.15)}
+/* 公仔書架層：背景之前、卡片之後（會跟著夜間暗罩一起變暗）*/
+.decor{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:0;pointer-events:none;image-rendering:pixelated}
+.wrap{position:relative;z-index:2;max-width:600px;margin:0 auto;padding:4px 14px 24px}
+img{image-rendering:pixelated}
+h1{font-size:26px;margin:0 0 .5em;text-shadow:2px 2px 0 rgba(255,255,255,.6)}
+h2{font-size:18px;color:#356b3f;margin:1.4em 0 .4em}
+p{margin:.6em 0}
+a{color:#2f6d3a;text-decoration:none}
+.card{background:rgba(255,255,255,.86);border:3px solid #2b2b2b;
+ box-shadow:5px 5px 0 rgba(0,0,0,.22);padding:14px 16px;margin:14px 0}
+input{width:100%;padding:14px;font-size:16px;font-family:inherit;
+ border:3px solid #2b2b2b;background:rgba(255,255,255,.92);outline:none}
+button{width:100%;padding:14px;font-size:18px;font-family:inherit;margin-top:12px;
+ border:3px solid #2b2b2b;background:#8fc98a;color:#1e3a22;cursor:pointer;
+ box-shadow:4px 4px 0 rgba(0,0,0,.25)}
+.home-card{width:75%}
+button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.25)}
+button:disabled{background:#b9d4b4;color:#5a6b5c}
+.barwrap{margin-top:10px;height:20px;border:3px solid #2b2b2b;
+ background:rgba(255,255,255,.7);padding:2px}
+.bar{height:100%;width:0;transition:width .4s;
+ background-image:repeating-linear-gradient(90deg,#5aa661 0 10px,#4f9557 10px 12px)}
+.seg{margin-top:8px;padding:8px 12px;background:rgba(255,255,255,.86);
+ border:3px solid #2b2b2b;font-size:15px}
+#msg{width:75%;margin-top:16px;padding:12px;border:3px solid #2b2b2b;display:none;
+ background:rgba(255,255,255,.86)}
+#msg.err{display:block;background:#f3c9c4}#msg.ok{display:block}
+.lib{display:block;width:75%;margin-top:12px;text-align:center;font-size:16px;
+ text-decoration:none;background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px}
+.nav{margin:6px 0 14px}.nav a{margin-right:16px}
+.meta{color:#4a4a4a;font-size:13px}.back{display:inline-block;margin:10px 0}
+details{margin-top:1em}summary{cursor:pointer;color:#356b3f}
+ul{list-style:none;padding:0}
+li{background:rgba(255,255,255,.86);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:12px;margin:10px 0}
+.d{color:#666;font-size:12px;display:block;margin-top:4px}
+.cnt{color:#777;font-size:13px}
+.chbox{background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px 14px;margin:10px 0}
+.chbox>summary{cursor:pointer;font-weight:600;color:#356b3f}
+.chbox ul{margin:8px 0 0}
+.chbox li{background:rgba(255,255,255,.7);box-shadow:none;border-width:2px}
+.transcript{font-size:15px;line-height:2}
+/* 首頁前景人物圖層：與背景同尺寸畫布、同樣 cover，確保像素對齊 */
+.hero{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:5;pointer-events:none;image-rendering:pixelated}
+</style>
+<style>body{font-family:-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+ -webkit-font-smoothing:auto;font-size:18px}
+h2{font-size:20px}.transcript{font-size:17px}</style>
+</head><body>
+<img class="bg" id="bgimg" alt="">
+<div class="wrap">
+<a class="back" href="../index.html">← 回摘要列表</a>
+<div class="meta">來源：<a href="https://youtu.be/uR9pucf_iig?si=hLyM0ltZdigjp9Im">https://youtu.be/uR9pucf_iig?si=hLyM0ltZdigjp9Im</a>　·　2026-08-24</div>
+<div class="card"><p>這段文字是一段非常精彩的演講或播客（Podcast）逐字稿，主要在探討<strong>「大腦可塑性」與「成長型心態（Growth Mindset）」</strong>之間的關係。</p>
+<p>為了幫助你更好地吸收這些內容，我將這段長文的核心重點整理成以下四個層次：</p>
+<h3>1. 科學基礎：大腦的物理變化</h3>
+<ul>
+<li><strong>神經網路的建立：</strong> 大腦有數十億個神經元，它們透過連結形成網路。當你學習新技能（如外語）時，相關的神經網路會強化，傳遞訊號效率變高。</li>
+<li><strong>「用進廢退」原則：</strong> 如果不練習，這些連結就會萎縮。</li>
+<li><strong>實證研究：</strong> 研究發現，精通雙語的人，大腦前後與左右的連線更強、神經纖維更粗。這證明瞭<strong>「頻繁使用」</strong>是改變大腦結構的關鍵。</li>
+</ul>
+<h3>2. 心態差異：固定型 vs. 成長型</h3>
+<ul>
+<li><strong>實驗觀察：</strong> 在面對困難問題並獲得回饋時：<ul>
+<li><strong>固定型心態（Fixed Mindset）：</strong> 只在判斷「對或錯」時專注，對於有用的建議或反饋不感興趣。</li>
+<li><strong>成長型心態（Growth Mindset）：</strong> 當接收到有用的資訊時，腦波顯示出更高的專注度。</li>
+</ul>
+</li>
+<li><strong>核心差異：</strong> 固定型的人害怕失敗會損害形象；成長型的人將挑戰視為學習的機會。</li>
+</ul>
+<h3>3. 個人經驗與實戰案例</h3>
+<ul>
+<li><strong>國術社的故事（反思）：</strong> 作者分享自己過去為了保護「社長」身份而不敢在對打中接受挑戰，這是一個典型的「固定型心態」。他當時害怕輸掉面子，卻因此錯過了練兵的機會。</li>
+<li><strong>廣播電臺的經歷（轉變）：</strong> 在面對語言自信心不足時，透過師父的鼓勵與「刻意練習」（準備筆記、模仿專業詞彙），作者從原本的畏縮轉向積極學習，進入了成長型心態。</li>
+</ul>
+<h3>4. 行動指南：如何實踐？</h3>
+<ul>
+<li><strong>追求過程而非完美：</strong> 引用《原子習慣》，強調掌握新技能關鍵在於「反覆實踐」。</li>
+<li><strong>數量產生質量：</strong> 在攝影師的實驗中，追求「數量」的人往往能產出更高品質的作品，因為他們經歷了更多的練習。</li>
+<li><strong>一萬小時定律：</strong> 引用《Outliers》，強調頂尖成就源於長期的、重複的磨練（Practice）。</li>
+</ul>
+<hr />
+<h3>💡 核心總結（金句）：</h3>
+<blockquote>
+<p><strong>「能力要提升是需要時間的，但心態要轉換可以是瞬間的。」</strong></p>
+</blockquote>
+<p>如果你想改變現狀，這段文字給你的建議是：<br />
+1.  <strong>接受挑戰：</strong> 不要因為害怕丟臉而避開困難。<br />
+2.  <strong>頻繁練習：</strong> 利用大腦「用進廢退」的特性，透過重複動作來強化神經連結。<br />
+3.  <strong>專注過程：</strong> 減少對「完美結果」的焦慮，增加「實踐次數」。</p><details><summary>展開完整逐字稿</summary><div class='transcript'>Hi guys, it&#x27;s JR<br>有一群小朋友做智力測驗<br>他們必須要完成10道非常艱難的非語言性的測驗問題<br>結果呢 他們都做得相當不錯<br>於是研究人員就稱讚了他們<br>殊不知 蹊蹺就在這<br>研究人員對其中一群小朋友說了類似這樣的話<br>哇 你答對了8題耶<br>這是非常好的分數<br>你一定很聰明<br>可是轉頭對另一群小朋友卻說了像是<br>哇 你答對了8題耶<br>這是很棒的分數<br>你一定是非常努力<br>誠如研究人員所擔心的<br>被稱讚很聰明的這一組小朋友<br>進入了所謂的固定型心態<br>相反的 被稱讚很努力的小朋友<br>進入了所謂的成長型心態<br>這個實驗是史丹佛心理學者Carol Dweck所做的研究<br>並且記錄在她2006年出版的著作<br>Mindset The New Psychology of Success<br>我們來看看接下來發生了什麼事<br>聰明組的小朋友<br>當研究人員給了他們另一個更有挑戰的新問題時<br>他們大部分卻拒絕了<br>挑戰失敗就意味著我不聰明瞭<br>為了守護他們那個我很聰明的頭銜<br>他們選擇不接受新的挑戰<br>而且他們還傾向去找那些成績比自己差的小朋友比較<br>相反的 努力組的小朋友<br>90%的小朋友欣然接受了<br>在過程中他們遇到困難的時候<br>就試圖透過更努力<br>或者是嘗試新的策略來解決問題<br>他們沒有把困難視為失敗<br>也不覺得這反映出了他們的智商<br>實驗過後他們發現<br>其實兩組小朋友都覺得這些問題相當有趣<br>當他們成功的時候<br>但是在第二次挑戰的時候<br>聰明組的小朋友就開始顯得一心嵐山<br>然而努力組的小朋友們呢<br>他們還是展現出相當濃厚的興趣<br>甚至還有小朋友說<br>我認為那些最難的題目最有趣<br>那在表現方面呢<br>很訝異的是聰明組後續的表現下降了<br>甚至當研究人員給了他們更容易的題目時<br>他們的表現也不如之前<br>而努力組的表現呢<br>因為他們不斷透過<br>挑戰新的難題<br>雕模他們的解題能力<br>所以後續表現是很明顯的上升了<br>更讓研究人員訝異<br>卻又同時感到憂心的是<br>當研究人員告知小朋友們說<br>我們之後也會去其他學校<br>其他學校的小朋友們<br>也一定會很想知道關於這些挑戰的事情喔<br>就給了小朋友一張<br>只可以寫下他們的感想<br>還有一個欄位是可以寫下他們答題的分數<br>有40%聰明組的小朋友<br>謊報了他們的成績<br>在固定型心態的世界裡<br>失敗是可恥的<br>那麼現在我們直白的來說明<br>什麼是成長型<br>什麼是固定型心態<br>固定型心態認為<br>能力是固定的<br>因此會產生必須要不斷被認可的心態<br>固定型心態認為<br>只有資質不夠的人才需要努力<br>如果我夠聰明<br>我幹嘛還需要努力呢<br>挑戰對他們來說是一種風險<br>因為失敗了就代表我不夠格<br>我必須要維持我很有能力的印象<br>在另一面呢<br>成長型心態認為自己的<br>能力是可以藉由努力<br>策略<br>別人的幫助來培育的<br>在Carol Dweck的TED演講中<br>她強調了一句成長型心態<br>非常重要的話<br>他們明白了他們的能力<br>可以成長<br>透過他們的努力<br>他們有一個我稱為<br>成長心態<br>困難<br>只是意味著<br>還沒有<br>我不是不會<br>我只是<br>還不會<br>還沒有<br>當成長型心態遇到挑戰的時候<br>你的反應是<br>努力<br>換個方法<br>學習看看<br>我們再看一個例子<br>在香港大學<br>Carol Dweck的研究團隊也進行了一項類似的研究<br>香港大學是全英語授課<br>不過不是每一個大一新生的英文都很好<br>他們勢必要想辦法趕快提升自己的英語實力<br>Dweck的團隊事先就掌握了<br>哪一些大一新生入學的時候<br>英語能力不夠好<br>研究人員問了這些學生一個問題<br>如果學校提供一堂課程給需要改善英語實力的學生<br>你願意接受嗎?<br>同時他們測量了這些學生成長或固定型心態的傾向<br>傾向成長型心態的新生<br>在被問到願不願意接受英語課程的時候<br>他們大部分抱以救命恩人式的<br>Yes, please, help me<br>反觀傾向固定型心態的學生<br>他們大部分都顯得沒什麼興趣<br>Dweck在他的書籍中寫道<br>成長型的學生相信成功在於學習<br>於是抓住了機會<br>固定型的學生不想暴露自己的短處<br>為了維持聰明的印象<br>他們情願讓自己的大學學業陷入風險<br>固定型心態把人變成了不願意學習的人<br>這種時候我們就要捫心自問<br>哎呀我該不會是固定型心態吧<br>阿捏 別生啊 生生困啊 再見 再見<br>大可不必哦<br>因為成長或固定型心態是可以改變的<br>就像是開頭我們講到的實驗<br>研究人員光是用一個特定的讚美方式<br>就讓孩子進入了一種特定的心態<br>而且在不同的領域當中<br>人會展現出不同的心態<br>譬如你可能在學術上是成長型心態<br>但是在人際關係上卻又偏向固定型心態<br>重點是你要能夠隨時察覺自己的內心<br>此時此刻在這個情境下<br>我進入了哪一種心態呢<br>我講我的例子哦<br>我以前在大學的時候<br>在社團裡面擔任社長的時候<br>就有出現成長或者是固定型心態的時刻<br>我在ICRT廣播電臺擔任節目主持人的時候<br>也有出現類似的狀況<br>直到現在<br>我拜讀了Carol Dweck的書籍之後<br>對我的生活真的是產生了非常大的正向改變<br>待會我們好好來聊聊這個部分<br>但是既然我們剛剛提到了學英文<br>就一定要介紹給你一個學習英文的超級好幫手<br>就是ElsaSpeak App<br>各位成長型心態的朋友們<br>你願不願意接受呢<br>有沒有情緒勒索<br>Just kidding<br>ElsaSpeak是Google投資全球五大AI App<br>超過五千萬次的下載<br>專門給需要提升英語口說能力<br>害怕自己沒有練習的物件<br>或者是害怕開口的人<br>或單純是你沒有時間或財力<br>去購買一些昂貴課程的成長型心態朋友們<br>它幾乎可以取代英語家教<br>成為你的AI英語教練<br>它會為你設計客製化的學習路徑<br>然後跟你進行各種互動練習<br>它會分析你的發音 音調 重音 用詞 文法<br>然後給你回饋<br>譬如我現在來練習發音<br>Set up a call back<br>然後就跟著她唸<br>Set up a call back<br>Yay 99%像母語認識<br>Alright that&#x27;s easy<br>好這邊我們<br>戳一下看它可不可以偵測到<br>Sure I&#x27;ll got her to call you back<br>When would be a good time<br>OK它這邊就有顯示了<br>這個一的地方<br>然後它就說不能唸成啊<br>要唸成欸<br>好這邊就有一個<br>欸<br>Alright所以這邊就是發音的部分<br>那我最喜歡的一個功能<br>其實是Elsa AI<br>你可以選擇一個情境<br>讓AI跟你做擬真的對話練習<br>非常有趣<br>我們現在就來試試看<br>我們選一個最簡單的<br>兩到三分鐘的conversation<br>Return a gift<br>Hello how can I assist you today?<br>Hi nice to meet you<br>I would like to return this gift<br>or maybe exchange it for something else<br>Hi there<br>Of course I can help you with that<br>Can you tell me why you would like<br>to return or exchange the gift?<br>Well it was a birthday gift<br>chocolate<br>but I&#x27;m pretty allergic to chocolate<br>but I didn&#x27;t want to mention it<br>to my friend in front of her face<br>I see that&#x27;s unfortunate<br>Do you have the receipt<br>or a gift receipt with you?<br>Oh yes of course here it is<br>Thank you very much<br>Thank you<br>Let me check the receipt for you<br>Based on our store policy<br>We can offer you a refund<br>or an exchange for another item<br>of equal value<br>Which one would you prefer?<br>Can I go with the cash?<br>No problem<br>We can process the refunding cash for you<br>Thank you so much<br>You&#x27;ve been great help<br>We&#x27;ll play completed<br>Well done!<br>We are computing your feedback<br>針對我的單字文法和發音<br>他分別給了中階 進階 進階<br>譬如說我們來看看發音的部分<br>他就說<br>Oh great job<br>You have an advanced level of pronunciation<br>OK 這個<br>Grammar也是advanced<br>然後他還是給我一些建議<br>他說instead of saying<br>You&#x27;ve been great help<br>It&#x27;s better to say<br>You&#x27;ve been a great help<br>OK<br>這個是<br>對<br>這是一個很細微的東西<br>You&#x27;ve been a great help<br>Vocabulary<br>有一些建議<br>試著多用一些不同的詞彙<br>來去表達同樣的idea<br>譬如<br>比起不斷的說<br>gift gift gift<br>你有時候可以用present<br>或者是說item<br>確實也是<br>所以他會給你這樣子<br>非常完整的一個回饋<br>所以這個是Elsa AI的功能<br>Elsa AI這個功能是包含在<br>Elsa Speak的Premium方案裡面<br>現在按下我們的頻道專屬連結<br>可以享有獨家的超高優惠<br>51%<br>連結放在我們的資訊欄位和留言區裡面<br>想要提升自己的英語口述能力的<br>成長型心態朋友們<br>不要錯過這個機會<br>Elsa Speak<br>人的大腦在學習不只是語言<br>在學習任何東西的時候<br>都會影響大腦的結構<br>甚至有些腦區會因此變大<br>大腦有八九百億個神經元<br>會互相連結形成一個錯綜複雜的網路<br>假使你經常使用一個新的外語<br>相關的神經網路就會發展<br>傳遞訊號的效率也會越來越高<br>但是一旦不常使用<br>相關的神經網路就會慢慢萎縮<br>就是一個用盡廢退的原則<br>研究發現<br>一個70歲會說兩種語言的人<br>前後腦之間和左右腦之間的連結<br>都比只說一種語言的人更好<br>而且神經纖維<br>也比較粗<br>不同的腦區可能因此而合作起來<br>更有效率<br>所以重點就在於經常使用<br>那麼講到腦科學呢<br>成長型還有固定型心態的人<br>他們甚至在腦波上面<br>都會有明顯的不同<br>Carol Dweck讓具有兩種心態的人<br>來到位於哥倫比亞大學的腦波實驗室<br>然後問他們一些很困難的問題<br>再給他們回饋<br>在過程當中就觀察他們的腦部活動<br>固定型心態的腦波顯示出<br>他們在被告知他們的答案<br>是對或錯的時候<br>最專注<br>然而在給予他們有用的回饋的時候<br>腦波顯示他們沒有太大興趣<br>反之<br>只有成長型人的腦波是顯示出<br>有用的資訊會讓他們更加專注精神<br>大學的時候我是傳統武藝打架社<br>簡稱國術社的社長<br>我想到一個我曾經展現出固定型心態的時刻<br>在我的任內<br>我和幹部們開始推廣實戰<br>我們有跟拳擊社交流<br>有跟跆拳道的社員交流<br>也經常在內部做實戰演練<br>來跟國術社的社長擁抱一下<br>大家鼓掌<br>我記得有一次我們跟跆拳道社借了場地做練習<br>社員們有給我一個綽號叫做劍腳旗<br>因為就很劍<br>注意腳旗<br>在一旁一個很資深的跆拳道社員見狀<br>就說希望可以跟我對打交流交流<br>這本來是一個很好的學習機會<br>但是我卻避而不戰<br>甚至我還私底下跟幹部們說<br>我是國術社社長<br>如果我挑戰輸了<br>那不是國術社的面子丟大了嗎?<br>其實內心裡我更是害怕<br>如果我在社員們面前輸了<br>在他們面前的社長地位和形象會遭受打擊<br>想想我當時真的是充分展現出了固定型心態<br>如果我輸了<br>我就沒有資格當國術社社長<br>那還是不要挑戰好了<br>可是現在想起來<br>當時真的是一個很好的練習實戰的機會<br>我卻這樣錯過了<br>如果是現在的我<br>我一定也會避而不戰<br>現在是老弱婦孺了<br>我在ICRT廣播電臺的時候<br>在那當廣播DJ<br>有一個條件就是<br>你必須要是Native Speaker<br>OK JR你從小在國外長大<br>沒有問題啊<br>是沒有問題啊<br>這個以前Joey C剛進來電臺的時候<br>第一次看到我還跟我說<br>欸 JR我以為你是一個高高壯壯的白人啊<br>什麼?<br>但是因為我10歲就離開美國了<br>所以我的一些智慧、片語量啊<br>一些很道地的美國的俚語就比較不懂了<br>有一次下節目<br>總經理Tim Berkey看到我就跟我說<br>欸你剛剛那個On the Contrast講錯了<br>應該是On the Contrary<br>也有一次我們幾個DJ在Studio打鬧<br>我拿起酒精要噴麥克風罩<br>然後當時的節目部經理Emily David就糾正我說<br>不是用Squirt<br>應該是用Spray<br>甚至他也曾經跟我說過<br>Sometimes your English sounds a bit off<br>所以在ICRT時期開心歸開心<br>但是常常也會感覺到不夠有自信<br>畢竟當時身旁的一些DJ都是美國人啊<br>加拿大人啊<br>ABC、CBC啊<br>有一天我去問我的師父<br>我們的臺駐Joseph Lin<br>順便恭喜一下他最近拿到金鐘獎<br>公孩啊<br>我把我的擔憂跟他講<br>想不到Joseph就跟我說<br>他其實以前也跟我<br>一模一樣<br>瞬間我就感覺到被理解了<br>他說他早期在LA還是在哪裡當起廣播DJ<br>他也是經常害怕講錯<br>擔心自己的英文不夠好<br>所以他經常聽國外的電臺主持人怎麼主持<br>然後還做筆記<br>就寫下了各式各樣的開麥introduction的說法<br>那每一次在開麥之前呢<br>他就會稍微看一下<br>譬如<br>Hey what up this is the midday show with me JR on ICRT<br>the only English radio station in Taiwan<br>所以我也開始收聽國外的電臺DJ<br>學他們怎麼說話<br>用了哪些詞彙<br>用了哪些表達的方式<br>然後也放了一本筆記本在旁邊<br>做Live節目的時候呢<br>三不五時就拿出來翻一下<br>我大可以play it safe<br>我開麥就講個兩三句過場的話<br>然後就放音樂<br>譬如FM100 sunny sunshine out there<br>weather is just beautiful<br>and we got Britney Spears in the house<br>check this one out<br>啪<br>要每一次都這樣混過去也是可以<br>但是就試著讓自己越講越多<br>越講越自在<br>現在回想起來呢<br>當時跟Joseph的一番對話呢<br>讓我進入了成長型心態<br>我可以學習<br>我可以成長<br>我會變得更厲害<br>重點就是要經常做<br>神經迴路是用盡廢退<br>Carol Dweck在校園裡面開了一個工作坊<br>叫做Brainology<br>專門教授這個大腦可塑性和成長性心態<br>那麼他把其中一個學生寫的回饋<br>就寫在他的書裡面<br>那學生說<br>Yes, the Brainology program helped a lot.<br>Every time I thought about not doing work<br>I remembered that my neurons could grow<br>if I did do the work.<br>固定型心態因為會避戰<br>所以失去可以磨練自己神經迴路的機會<br>成長型心態因為樂於接受挑戰<br>所以日積月累<br>增加了許多磨練自己和成長的機會<br>差異就在這裡<br>在很有名的《原子習慣》這本書裡面<br>記載了一個很有名的攝影師<br>跟學生之間的故事<br>Jerry Usman在他的大學課堂上<br>起初把學生分成了兩組<br>質量組和數量組<br>他跟數量組的同學說<br>你們被評分的方式<br>完全依照你繳交作品的數量而定<br>他跟質量組的同學則說<br>期末之前你只需要繳交一份作品<br>你的成績完全是這作品的完美程度來決定<br>然而到了期末他卻驚訝的發現<br>所有攝影頂級的作品<br>都出自於數量組的同學<br>《原子習慣》的作者James Clear<br>下了一個結論<br>如果你想要掌握一個習慣<br>關鍵是從反覆實踐開始<br>而不是追求完美<br>所以關鍵是什麼呢<br>又回到我們剛剛講的<br>就是經常做<br>反覆做<br>這個就是關鍵<br>最後在Malcolm Gladwell2008年的著作<br>《Outliers》一書裡面<br>他開宗明義地提到<br>本書要探討的是<br>在這個社會上表現特殊的人士<br>以及其成功的秘密<br>他引用了90年代初期認知心理學者<br>Anders Erikson<br>在柏林一間很有名的<br>音樂學校所做的研究<br>研究人員把主修小提琴的學生<br>按照能力分成了三組<br>依序是明日之星組<br>資質尚可組<br>以及難以成為職業音樂家組<br>接著研究人員問了他們<br>同樣的一個問題<br>從你開始學小提琴的第一天<br>到目前為止<br>總共練習了多少小時<br>結果顯示<br>這三組開始學琴的年紀<br>都差不多五歲左右<br>而且在前面幾年<br>大概都是一個禮拜兩三個小時<br>但是真正的差距<br>從8歲開始出現了<br>在班上名列前茅的同學<br>練習時間比其他人更長<br>9歲<br>10歲<br>14歲<br>每週練習時數<br>從6小時<br>增加到8小時<br>增加到16小時<br>到了20歲<br>每週練習時數超過30小時<br>如果幫他們統計一下<br>就會發現<br>明日之星組<br>每一個人已經練習了<br>1萬個小時<br>資質尚可組大約是8000小時<br>而難以成為職業音樂家組<br>大約是4000小時<br>後來Erikson又針對<br>職業和業餘的鋼琴家做研究<br>發現了類似的結果<br>作者Malcolm Gladwell在書中寫道<br>研究人員相信<br>真正的專精<br>必須經過1萬個小時的垂練<br>也就是<br>反覆去做<br>經常去做<br>而什麼樣的人<br>更是容易反覆操作<br>反覆去接受挑戰呢<br>相較之下<br>應該是那些對於學習的熱情<br>挫折的接受度更高的人<br>那些具備成長力<br>具備成長心態的人<br>能力要提升<br>是需要時間的<br>但是心態要轉換<br>可以是瞬間的<br>今天的影片<br>跟你們分享<br>喜歡的話呢<br>記得給我們按讚<br>訂閱分享留言<br>也可以留下你的故事<br>來跟大家分享<br>我是非常期待看到<br>如果喜歡這一類的<br>正向心理內容<br>或者是自我成長的內容<br>也歡迎收聽我們的<br>The JR Lee Podcast<br>每週一晚上<br>跟你們見面<br>那麼我們就下一次再見<br>拜拜<br>Peace<br>拜拜</div></details></div>
+</div>
+<script>
+(function(){var base="../assets";
+var h=parseInt(new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Asia/Taipei'}).format(new Date()),10);
+var b=(h>=5&&h<11)?'morning':(h>=11&&h<17)?'day':(h>=17&&h<20)?'dusk':'night';
+document.body.classList.add('theme-'+b);
+var el=document.getElementById('bgimg'); if(!el) return;
+el.onerror=function(){el.onerror=null;el.src=base+'/scene-day.png'};
+el.src=base+'/scene-'+b+'.png';})();
+</script>
+</body></html>
