@@ -11,10 +11,13 @@ body{font-family:'Cubic11',"Noto Sans TC",monospace;color:#2b2b2b;line-height:1.
  min-height:100vh;background:#bcd6a8 no-repeat center center fixed;background-size:cover;
  image-rendering:pixelated;-webkit-font-smoothing:none}
 body::before{content:"";position:fixed;inset:0;background:rgba(255,255,255,0);
- pointer-events:none;z-index:0;transition:background .4s}
+ pointer-events:none;z-index:1;transition:background .4s}
 body.theme-night::before{background:rgba(18,14,38,.38)}
 body.theme-dusk::before{background:rgba(60,30,50,.15)}
-.wrap{position:relative;z-index:1;max-width:600px;margin:0 auto;padding:4px 14px 24px}
+/* 公仔書架層：背景之前、卡片之後（會跟著夜間暗罩一起變暗）*/
+.decor{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;
+ object-position:center center;z-index:0;pointer-events:none;image-rendering:pixelated}
+.wrap{position:relative;z-index:2;max-width:600px;margin:0 auto;padding:4px 14px 24px}
 img{image-rendering:pixelated}
 h1{font-size:26px;margin:0 0 .5em;text-shadow:2px 2px 0 rgba(255,255,255,.6)}
 h2{font-size:18px;color:#356b3f;margin:1.4em 0 .4em}
@@ -27,6 +30,7 @@ input{width:100%;padding:14px;font-size:16px;font-family:inherit;
 button{width:100%;padding:14px;font-size:18px;font-family:inherit;margin-top:12px;
  border:3px solid #2b2b2b;background:#8fc98a;color:#1e3a22;cursor:pointer;
  box-shadow:4px 4px 0 rgba(0,0,0,.25)}
+.home-card{width:75%}
 button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.25)}
 button:disabled{background:#b9d4b4;color:#5a6b5c}
 .barwrap{margin-top:10px;height:20px;border:3px solid #2b2b2b;
@@ -35,10 +39,10 @@ button:disabled{background:#b9d4b4;color:#5a6b5c}
  background-image:repeating-linear-gradient(90deg,#5aa661 0 10px,#4f9557 10px 12px)}
 .seg{margin-top:8px;padding:8px 12px;background:rgba(255,255,255,.86);
  border:3px solid #2b2b2b;font-size:15px}
-#msg{margin-top:16px;padding:12px;border:3px solid #2b2b2b;display:none;
+#msg{width:75%;margin-top:16px;padding:12px;border:3px solid #2b2b2b;display:none;
  background:rgba(255,255,255,.86)}
 #msg.err{display:block;background:#f3c9c4}#msg.ok{display:block}
-.lib{display:block;margin-top:12px;text-align:center;font-size:16px;
+.lib{display:block;width:75%;margin-top:12px;text-align:center;font-size:16px;
  text-decoration:none;background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
  box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px}
 .nav{margin:6px 0 14px}.nav a{margin-right:16px}
@@ -49,14 +53,22 @@ li{background:rgba(255,255,255,.86);border:3px solid #2b2b2b;
  box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:12px;margin:10px 0}
 .d{color:#666;font-size:12px;display:block;margin-top:4px}
 .cnt{color:#777;font-size:13px}
+.chbox{background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px 14px;margin:10px 0}
+.chbox>summary{cursor:pointer;font-weight:600;color:#356b3f}
+.chbox ul{margin:8px 0 0}
+.chbox li{background:rgba(255,255,255,.7);box-shadow:none;border-width:2px}
 .transcript{font-size:15px;line-height:2}
+/* 首頁前景人物圖層：與背景同尺寸畫布、同樣 cover，確保像素對齊 */
+.hero{position:fixed;inset:0;width:100%;height:100%;object-fit:cover;
+ object-position:center center;z-index:5;pointer-events:none;image-rendering:pixelated}
 </style>
 <style>body{font-family:-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;
  -webkit-font-smoothing:auto}</style>
 </head><body>
 <div class="wrap">
 <h1>我的 Podcast 摘要</h1>
-<h2>未分類 <span class="cnt">（13 集）</span></h2><ul><li><a href="summaries/2026-08-23_【博音】EP233_不知道自己的價值，就會活在這些困境裡_ft._海蒂老師.html">【#博音】EP233 | 不知道自己的價值，就會活在這些困境裡 ft. 海蒂老師</a><span class="d">2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP235_為什麼我們感受不到自己壓力很大_ft._袁瑋醫師.html">【#博音】EP235 | 為什麼我們感受不到自己壓力很大 ft. 袁瑋醫師</a><span class="d">2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP213_為什麼我要優化自己的EQ來讓別人爽？ft._黃瑽寧醫師.html">【#博音】EP213 | 為什麼我要優化自己的EQ來讓別人爽？ft. 黃瑽寧醫師</a><span class="d">2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP233_不知道自己的價值，就會活在這些困境裡_ft._海蒂老師.html">【#博音】EP233 | 不知道自己的價值，就會活在這些困境裡 ft. 海蒂老師</a><span class="d">2026-08-23</span></li><li><a href="summaries/2026-08-23_「我不夠好，但沒關係」，學會如何擁抱自卑感，也不踩到別人的雷。阿德勒心理師的衷心建議ft.海蒂老師｜The_JR_Lee.html">「我不夠好，但沒關係」，學會如何擁抱自卑感，也不踩到別人的雷。阿德勒心理師的衷心建議ft.海蒂老師｜The JR Lee Podcast Ep136</a><span class="d">2026-08-23</span></li><li><a href="summaries/2026-08-22_【博音】EP208_台哥大總經理：大多數的創作者沒有意識到自己是服務業_ft._林之晨.html">【#博音】EP208 | 台哥大總經理：大多數的創作者沒有意識到自己是服務業 ft. 林之晨</a><span class="d">2026-08-22</span></li><li><a href="summaries/2026-08-21_你以為_Claude_降智，其實是你少設了這個.html">你以為 Claude 降智，其實是你少設了這個</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_Gemini_Nano_Banana_九種超實用情境.html">Gemini Nano Banana 九種超實用情境</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_ChatGPT_Image_2.0_vs_Nano_Banana_2誰生圖更強？超專業商品海報+精細中文生成｜看完這11.html">ChatGPT Image 2.0 vs Nano Banana 2誰生圖更強？超專業商品海報+精細中文生成｜看完這11種應用再決定用哪個！</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_Gemini_Nano_Banana_九種超實用情境.html">Gemini Nano Banana 九種超實用情境</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_E132_河狸_🦫_咬木頭、蓋水壩的動物界頂級工程師！.html">E132 河狸 🦫 咬木頭、蓋水壩的動物界頂級工程師！</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_【博音】EP238_親子溝通的關鍵，不是溝通_ft._郭葉珍教授.html">【#博音】EP238 | 親子溝通的關鍵，不是溝通 ft. 郭葉珍教授</a><span class="d">2026-08-21</span></li><li><a href="summaries/2026-08-21_【博音】EP235_為什麼我們感受不到自己壓力很大_ft._袁瑋醫師.html">【#博音】EP235 | 為什麼我們感受不到自己壓力很大 ft. 袁瑋醫師</a><span class="d">2026-08-21</span></li></ul><h2>JR Lee Radio <span class="cnt">（2 集）</span></h2><ul><li><a href="summaries/2026-08-24_阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The_JR_Lee_Podca.html">阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The JR Lee Podcast Ep137</a><span class="d">2026-08-24</span></li><li><a href="summaries/2026-08-24_阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The_JR_Lee_Podca.html">阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The JR Lee Podcast Ep137</a><span class="d">2026-08-24</span></li></ul>
+<h2>最新</h2><ul><li><a href="summaries/2026-08-24_Z世代智商反轉背後的真相：為什麼教育科技傷害了我們的孩子？｜The_JR_Lee_Podcast_Ep142.html">Z世代智商反轉背後的真相：為什麼教育科技傷害了我們的孩子？｜The JR Lee Podcast Ep142</a><span class="d">JR Lee Radio・2026-08-24</span></li><li><a href="summaries/2026-08-24_阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The_JR_Lee_Podca.html">阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The JR Lee Podcast Ep137</a><span class="d">JR Lee Radio・2026-08-24</span></li></ul><h2>頻道</h2><details class="chbox"><summary>JR Lee Radio <span class="cnt">（3 集）</span></summary><ul><li><a href="summaries/2026-08-24_Z世代智商反轉背後的真相：為什麼教育科技傷害了我們的孩子？｜The_JR_Lee_Podcast_Ep142.html">Z世代智商反轉背後的真相：為什麼教育科技傷害了我們的孩子？｜The JR Lee Podcast Ep142</a><span class="d">JR Lee Radio・2026-08-24</span></li><li><a href="summaries/2026-08-24_阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The_JR_Lee_Podca.html">阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The JR Lee Podcast Ep137</a><span class="d">JR Lee Radio・2026-08-24</span></li><li><a href="summaries/2026-08-24_阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The_JR_Lee_Podca.html">阿德勒心理學在講什麼？｜什麼是自卑與補償、生命風格、課題分離、社會情懷？ft海蒂心理師｜The JR Lee Podcast Ep137</a><span class="d">JR Lee Radio・2026-08-24</span></li></ul></details><details class="chbox"><summary>未分類 <span class="cnt">（13 集）</span></summary><ul><li><a href="summaries/2026-08-23_「我不夠好，但沒關係」，學會如何擁抱自卑感，也不踩到別人的雷。阿德勒心理師的衷心建議ft.海蒂老師｜The_JR_Lee.html">「我不夠好，但沒關係」，學會如何擁抱自卑感，也不踩到別人的雷。阿德勒心理師的衷心建議ft.海蒂老師｜The JR Lee Podcast Ep136</a><span class="d">未分類・2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP233_不知道自己的價值，就會活在這些困境裡_ft._海蒂老師.html">【#博音】EP233 | 不知道自己的價值，就會活在這些困境裡 ft. 海蒂老師</a><span class="d">未分類・2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP213_為什麼我要優化自己的EQ來讓別人爽？ft._黃瑽寧醫師.html">【#博音】EP213 | 為什麼我要優化自己的EQ來讓別人爽？ft. 黃瑽寧醫師</a><span class="d">未分類・2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP235_為什麼我們感受不到自己壓力很大_ft._袁瑋醫師.html">【#博音】EP235 | 為什麼我們感受不到自己壓力很大 ft. 袁瑋醫師</a><span class="d">未分類・2026-08-23</span></li><li><a href="summaries/2026-08-23_【博音】EP233_不知道自己的價值，就會活在這些困境裡_ft._海蒂老師.html">【#博音】EP233 | 不知道自己的價值，就會活在這些困境裡 ft. 海蒂老師</a><span class="d">未分類・2026-08-23</span></li><li><a href="summaries/2026-08-22_【博音】EP208_台哥大總經理：大多數的創作者沒有意識到自己是服務業_ft._林之晨.html">【#博音】EP208 | 台哥大總經理：大多數的創作者沒有意識到自己是服務業 ft. 林之晨</a><span class="d">未分類・2026-08-22</span></li><li><a href="summaries/2026-08-21_【博音】EP235_為什麼我們感受不到自己壓力很大_ft._袁瑋醫師.html">【#博音】EP235 | 為什麼我們感受不到自己壓力很大 ft. 袁瑋醫師</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_【博音】EP238_親子溝通的關鍵，不是溝通_ft._郭葉珍教授.html">【#博音】EP238 | 親子溝通的關鍵，不是溝通 ft. 郭葉珍教授</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_E132_河狸_🦫_咬木頭、蓋水壩的動物界頂級工程師！.html">E132 河狸 🦫 咬木頭、蓋水壩的動物界頂級工程師！</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_Gemini_Nano_Banana_九種超實用情境.html">Gemini Nano Banana 九種超實用情境</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_ChatGPT_Image_2.0_vs_Nano_Banana_2誰生圖更強？超專業商品海報+精細中文生成｜看完這11.html">ChatGPT Image 2.0 vs Nano Banana 2誰生圖更強？超專業商品海報+精細中文生成｜看完這11種應用再決定用哪個！</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_Gemini_Nano_Banana_九種超實用情境.html">Gemini Nano Banana 九種超實用情境</a><span class="d">未分類・2026-08-21</span></li><li><a href="summaries/2026-08-21_你以為_Claude_降智，其實是你少設了這個.html">你以為 Claude 降智，其實是你少設了這個</a><span class="d">未分類・2026-08-21</span></li></ul></details>
 </div>
 <script>
 (function(){var base="assets";
