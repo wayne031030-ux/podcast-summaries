@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>如何分離不再焦慮，感覺統合失調、情緒調控有關？如何界定患病？家長勿自責轉移時間點，請育嬰假目標要具體｜黃瑽寧（feat.黃鈞蔚、趙雁南、王宏哲）</title>
+<style>
+@font-face{font-family:'Cubic11';src:url('../assets/Cubic-11.ttf') format('truetype');font-display:swap}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:'Cubic11',"Noto Sans TC",monospace;color:#2b2b2b;line-height:1.9;
+ min-height:100vh;background:#6f5540;-webkit-font-smoothing:none}
+/* 背景場景層：與人物/公仔同機制，手機捲動不脫鉤 */
+.bg{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:-1;pointer-events:none;image-rendering:pixelated}
+body::before{content:"";position:fixed;inset:0;background:rgba(255,255,255,0);
+ pointer-events:none;z-index:1;transition:background .4s}
+body.theme-night::before{background:rgba(18,14,38,.38)}
+body.theme-dusk::before{background:rgba(60,30,50,.15)}
+/* 公仔書架層：背景之前、卡片之後（會跟著夜間暗罩一起變暗）*/
+.decor{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:0;pointer-events:none;image-rendering:pixelated}
+.wrap{position:relative;z-index:2;max-width:600px;margin:0 auto;padding:4px 14px 24px}
+img{image-rendering:pixelated}
+h1{font-size:26px;margin:0 0 .5em;text-shadow:2px 2px 0 rgba(255,255,255,.6)}
+h2{font-size:18px;color:#356b3f;margin:1.4em 0 .4em}
+p{margin:.6em 0}
+a{color:#2f6d3a;text-decoration:none}
+.card{background:rgba(255,255,255,.86);border:3px solid #2b2b2b;
+ box-shadow:5px 5px 0 rgba(0,0,0,.22);padding:14px 16px;margin:14px 0}
+input{width:100%;padding:14px;font-size:16px;font-family:inherit;
+ border:3px solid #2b2b2b;background:rgba(255,255,255,.92);outline:none}
+button{width:100%;padding:14px;font-size:18px;font-family:inherit;margin-top:12px;
+ border:3px solid #2b2b2b;background:#8fc98a;color:#1e3a22;cursor:pointer;
+ box-shadow:4px 4px 0 rgba(0,0,0,.25)}
+.home-card{width:75%}
+button:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(0,0,0,.25)}
+button:disabled{background:#b9d4b4;color:#5a6b5c}
+.barwrap{margin-top:10px;height:20px;border:3px solid #2b2b2b;
+ background:rgba(255,255,255,.7);padding:2px}
+.bar{height:100%;width:0;transition:width .4s;
+ background-image:repeating-linear-gradient(90deg,#5aa661 0 10px,#4f9557 10px 12px)}
+.seg{margin-top:8px;padding:8px 12px;background:rgba(255,255,255,.86);
+ border:3px solid #2b2b2b;font-size:15px}
+#msg{width:75%;margin-top:16px;padding:12px;border:3px solid #2b2b2b;display:none;
+ background:rgba(255,255,255,.86)}
+#msg.err{display:block;background:#f3c9c4}#msg.ok{display:block}
+.lib{display:block;width:75%;margin-top:12px;text-align:center;font-size:16px;
+ text-decoration:none;background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px}
+.nav{margin:6px 0 14px}.nav a{margin-right:16px}
+.meta{color:#4a4a4a;font-size:13px}.back{display:inline-block;margin:10px 0}
+details{margin-top:1em}summary{cursor:pointer;color:#356b3f}
+ul{list-style:none;padding:0}
+li{background:rgba(255,255,255,.86);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:12px;margin:10px 0}
+.d{color:#666;font-size:12px;display:block;margin-top:4px}
+.cnt{color:#777;font-size:13px}
+.chbox{background:rgba(255,255,255,.82);border:3px solid #2b2b2b;
+ box-shadow:4px 4px 0 rgba(0,0,0,.18);padding:10px 14px;margin:10px 0}
+.chbox>summary{cursor:pointer;font-weight:600;color:#356b3f}
+.chbox ul{margin:8px 0 0}
+.chbox li{background:rgba(255,255,255,.7);box-shadow:none;border-width:2px}
+.transcript{font-size:15px;line-height:2}
+/* 首頁前景人物圖層：與背景同尺寸畫布、同樣 cover，確保像素對齊 */
+.hero{position:fixed;inset:0;width:100%;height:100%;object-fit:contain;
+ object-position:center center;z-index:5;pointer-events:none;image-rendering:pixelated}
+</style>
+<style>body{font-family:-apple-system,"Noto Sans TC","Microsoft JhengHei",sans-serif;
+ -webkit-font-smoothing:auto;font-size:18px}
+h2{font-size:20px}.transcript{font-size:17px}</style>
+</head><body>
+<img class="bg" id="bgimg" alt="">
+<div class="wrap">
+<a class="back" href="../index.html">← 回摘要列表</a>
+<div class="meta">來源：<a href="https://youtu.be/UVSn_DHXGmw">https://youtu.be/UVSn_DHXGmw</a>　·　2026-09-07</div>
+<div class="card"><p>這段對話是一段非常溫暖且具有實質建議的親子育兒對談。內容主要圍繞在<strong>「分離焦慮」、「育嬰假的心態」以及「如何處理孩子的行為反應」</strong>這三個核心議題。</p>
+<p>以下是這段對話的重點精華總結：</p>
+<h3>1. 處理分離焦慮的實戰技巧</h3>
+<ul>
+<li><strong>建立心理預期（洗腦）：</strong> 在分離前，要不斷告訴孩子「媽媽會來接你」，讓孩子建立對時間與約定的信任感。</li>
+<li><strong>提供依賴物：</strong> 給孩子一個熟悉的物品（如布偶）隨身攜帶，讓他在與父母分離時有安全感，降低焦慮。</li>
+<li><strong>區分「正常焦慮」與「過度焦慮」：</strong><ul>
+<li><strong>正常焦慮：</strong> 孩子只是因為依賴而哭鬧，這屬於發展過程，可以耐心陪伴。</li>
+<li><strong>過度焦慮（或感官統合異常）：</strong> 如果孩子對外界事物適應力極低、極度抗拒接觸，可能需要透過增加社交經驗、豐富感官體驗（如玩沙子、草地）來補足。</li>
+</ul>
+</li>
+</ul>
+<h3>2. 破解家長的「完美焦慮」</h3>
+<ul>
+<li><strong>避免自我苛責：</strong> 許多媽媽（如品盈）因為過度擔心，會陷入「我應該24小時陪伴孩子」的完美主義，導致情緒受孩子牽著走。</li>
+<li><strong>接納現實：</strong> 專家提醒，家長必須先接納自己。當媽媽的心態穩定了，才不會被孩子的哭鬧帶入情緒漩渦，進而能更理智地處理問題。</li>
+</ul>
+<h3>3. 關於「育嬰假」的心理建設</h3>
+<p>這部分是給予給予職工媽媽非常重要的心理支援：<br />
+*   <strong>目的要明確：</strong> 照醫師建議，請育嬰假時要有具體的目標（例如：建立主要照顧者的穩定性、讓孩子適應環境）。<br />
+*   <strong>陪伴本身就是祝福：</strong> 許多媽媽會質疑「我陪了這麼久，為什麼孩子還是有分離焦慮？」。專家指出，<strong>陪伴的時間本身就是一種回報與祝福</strong>。無論是陪了8個月、1年還是2年，那段全心投入的時光，都是母子/父子之間珍貴的連結，不應因為現在的困難而否定過去的付出。</p>
+<h3>4. 核心觀念：勇敢改變 vs. 耐心陪伴</h3>
+<ul>
+<li><strong>如果孩子有明顯問題（如情緒失控、嚴重焦慮）：</strong> 家長要「勇敢去改變」現有的照顧模式或尋求專業協助。</li>
+<li><strong>如果孩子只是正常的成長過程：</strong> 家長要「耐心陪伴接受」，給予孩子時間去成長。</li>
+</ul>
+<hr />
+<p><strong>總結一句話給予家長的鼓勵：</strong><br />
+<strong>「先接納自己，再接納孩子。你的陪伴已經是最好的禮物，而面對孩子的挑戰時，你的穩定情緒是給他最好的支援。」</strong></p><details><summary>展開完整逐字稿</summary><div class='transcript'>我曾經看過一本書<br>那個作者<br>他在上面寫說<br>我讀三國演義<br>得到的結論是<br>健康很重要<br>怎麼會有人讀三國演義<br>讀到覺得健康很重要呢<br>你可以想想看<br>三國演義裡面<br>最聰明的是誰<br>諸葛亮<br>可是最後一統天下的是誰<br>是司馬懿<br>不是諸葛亮<br>為什麼最聰明的人<br>最後沒有辦法一統天下呢<br>當時司馬懿被諸葛亮<br>嘲笑成小鬧鬧<br>每次要跟他對賬<br>叫囂怎麼樣<br>他都不出來跟你打仗<br>躲在城堡裡面<br>那個諸葛亮<br>還送了女人的衣服<br>就有點性別歧視<br>說你就像娘們一樣<br>再怎麼樣叫你<br>都不出來跟我一決雌雄<br>司馬懿還回了他一封信<br>說對我就是小鬧鬧怎麼樣<br>他還笑諸葛亮說<br>你啊時少事煩<br>吃那麼少<br>每天又煩那麼多事<br>豈能久乎<br>你撐不久啦<br>這最後呢<br>還真被司馬懿說中了<br>因為諸葛亮<br>每天吃很少是很煩<br>然後每天憂國憂民<br>最後他54歲就死掉了<br>司馬懿每天就是<br>過得輕鬆的生活<br>然後以疫代勞<br>他活了73歲<br>跟現在的人的平均年齡<br>都快要接近了<br>最後就由他來一統天下了<br>所以你覺得<br>三國演義的結論<br>是不是真的告訴你<br>健康很重要呢<br>我們現在已經兩歲<br>四個月了<br>沒有<br>那從就是我請孕假<br>到他送去保姆家這中間<br>我已經在家陪他24小時<br>陪了八個月<br>然後本來想說<br>是可以給他足夠安全感<br>讓他之後可以面對一些不同的情況<br>可是沒想到他現在就是分離焦慮<br>還是那麼嚴重<br>就是早上送去保姆家的時候<br>他都會就是哭鬧啊<br>抱給保姆的時候<br>他都掛在身上<br>不肯下來<br>那保姆一接過去呢<br>也是會他就會大哭崩潰<br>可是因為要趕著上班<br>也沒有辦法說<br>一直在那邊陪他陪很久<br>對<br>但是就是每天下班去接他的時候<br>他也是玩到很開心都不肯回家<br>所以他並不是不喜歡那裡<br>然後也不是不喜歡保姆<br>平盈的媽媽呢<br>非常的焦慮<br>真的<br>她說這個小孩送去那邊已經那麼久了<br>一直焦慮<br>保姆家已經<br>你說一天兩天就算了<br>一年多了<br>快兩年了<br>我就親自到現場問一下<br>哈嘍<br>平盈媽媽你好<br>平盈你好<br>你好<br>她這個十八相送<br>的這個<br>這個<br>這個<br>這個<br>這個<br>這個過程到底是有多慘烈<br>每天早上去就是我交給保姆的那一刻<br>都會大哭然後崩潰<br>你最後是怎麼解決<br>是保姆幫你<br>就是對<br>保姆就說我離開之後<br>其實過一陣子他分心了<br>就會好了<br>只是就是那一刻永遠就是過不去<br>保姆家後來有其他小孩嗎<br>有保姆他女兒<br>所以就一起玩<br>就好像就沒事了<br>那回來的時候呢<br>你幾點去接他<br>回來晚上就大概下班<br>可能六七點左右去接他<br>可是回來的時候他也不會說<br>一定要跟我回家<br>有時候玩得很嗨<br>還說媽媽等我<br>可是不知道為何早上就還是這樣<br>然後回來之後<br>你們是一起睡<br>分開睡<br>一起睡<br>然後他是貼著我睡<br>對他就是很像身上裝的雷達<br>就是隻要我稍微離開他或是起來<br>他就是立即驚醒<br>然後就會哭<br>就會找我<br>奶睡嗎<br>對他是奶睡<br>然後半夜就還是會夜奶<br>這一陣子有好一點<br>大概三四小時<br>一次<br>然後之前一直到兩歲多<br>都還是兩個小時一次<br>所以是蠻辛苦的<br>那早上大概幾點起來<br>早上他大概是八點<br>他會一起來就開始一直弄<br>我不要去<br>以前不會<br>可是最近開始比較會講<br>對<br>那後來你怎麼辦<br>前陣子網路上就很流行<br>說什麼感覺統合什麼的<br>對<br>然後他就有一些符合那些條件<br>就包含分離焦慮<br>還有觸覺敏感<br>還有睡不好這些問題<br>我就帶他去做了那種<br>所謂職能治療師的感覺統合評估<br>對<br>好了 寶寶<br>要抱抱嗎<br>不要 你要他坐這邊<br>媽媽坐這邊<br>那我們在這張椅子上面玩這個好了<br>你要玩這個嗎 寶寶<br>你坐在這邊<br>好不好<br>媽媽不過來了<br>這是你的<br>你的椅子<br>太棒了<br>好可愛<br>所以你帶他去坐<br>那邊的老師是說<br>他應該是感覺調節的問題<br>就是他沒有辦法控制自己的情緒<br>是需要大人跟外力一些東西來幫助<br>對 所以他就建議我使用一些<br>現在都很知名的觸覺刷<br>或是什麼一些按摩的手法 對<br>他有給你哪一些診斷<br>他就是會看他<br>放他在旁邊玩<br>然後觀察他玩的方式<br>就是我只要一離他的視線範圍<br>餘光的範圍<br>他就會立即就是大哭<br>然後就說媽媽<br>那個媽媽呢<br>媽媽抱這樣<br>分離焦慮<br>可是他在保護家的時候<br>你也不知道他是不是照玩<br>對 所以我們就也是覺得很匪夷所思<br>就是為什麼會這樣<br>第二個診斷是什麼<br>還有就是當一些東西<br>就是不同材質<br>像棉花 棉土什麼東西<br>豆子<br>然後他就是有一些觸覺敏感<br>這就是觸覺刷<br>就是說要幫他刷可以改善這樣子<br>所以他不要<br>對 他也不願意<br>然後再來就是晚上睡眠不好<br>睡眠的問題其實也是一種<br>對 它也是一種感覺同和方面的問題<br>好 媽媽最大的疑惑還是<br>那個18箱是種分離焦慮的問題<br>可是我沒有感受到他在保姆家<br>好像也是可以跟他的孩子<br>就保姆的孩子玩<br>那回家甚至還會說<br>再等我一下<br>這樣真的算分離焦慮嗎<br>還有他對這些不同材質的觸覺刷等等<br>他都很排斥<br>然後這個<br>有的時候晚上睡覺的時候<br>必須要起來吸奶好幾次<br>這只是一個成長的過程<br>還是我們有什麼可以在這個時候<br>介入的呢<br>我們來看看專家怎麼說<br>好 在現場的時候<br>品穎心情就不太好<br>是的 真的<br>不是他在那邊心情不好<br>跟我們今天主題無關<br>因為媽媽在他旁邊<br>所以我比較想問的是<br>這個分離焦慮<br>這個名詞應該大家都瞭解<br>就是跟媽媽分離的時候<br>就寶寶非常焦慮<br>媽媽都很焦慮<br>這個年齡大概是什麼樣的時間點<br>這是一種病嗎<br>為什麼會發生呢<br>分離焦慮<br>這是一種病嗎<br>為什麼會發生呢<br>這是一個正常的<br>寶寶正常的生理需求<br>他是大概在五到六個月的小孩<br>你就可以看到他慢慢發展出<br>這樣的依附的行為<br>就是跟媽媽分離<br>就會開始很哭很鬧這樣<br>不只是媽媽<br>就是針對主要的照顧者<br>可能是爸爸 媽媽<br>沒有錯<br>還有其他的長輩之類的<br>會延續到幾歲呢<br>大概到三歲以後<br>就會慢慢消失了<br>對 因為人類小時候<br>能力行為還不是很好<br>他需要有一個主要的依附物件<br>才能有一個安全感<br>趙醫師你意思就是說<br>分離焦慮這件事情<br>其實不是病<br>它只是一個過程<br>我以前常常講就是說<br>這個年紀的小孩沒有時間概念<br>所以我不知道今天我跟你分開之後<br>你什麼時候還會再來找我<br>你說等一下 等一下聽不懂<br>兩點 兩點聽不懂<br>不太知道這個是什麼意思<br>甚至連睡覺眼睛閉起來<br>我到底有沒有機會可以張開<br>再看到你呢<br>說老實話這些小孩子<br>就是因為這樣<br>所以才會很不想跟主要照顧者分離<br>那什麼樣的狀況下<br>我們才會覺得它叫分離焦慮症<br>也就是說我們真的<br>不能再讓它分離了<br>那怎麼樣的狀況下<br>我們覺得說這只是一個過程<br>其實沒有關係<br>估計其實有一個<br>333的一個哭泣準則<br>就是說如果哭泣<br>每一次超過30分鐘<br>每一天都來搞個三次<br>然後一個禮拜都超過三天<br>等等這樣子<br>那頻率跟程度好像太過分了<br>都安撫不下來<br>就表示你不適合<br>讓它再長時間跟你分離<br>這是從哭泣理論跟情緒那邊<br>搬過來解釋分離焦慮<br>因為表示可能認知能力<br>或者是它自己的心智狀態<br>或者是它本身的氣質<br>正屬於模稜驚喜的<br>對 模稜驚喜<br>對 真的難搞的那一群<br>那這是一個判斷的一個準則<br>第二個判斷的準則<br>就是有些孩子會引發<br>像你們兒科常在看的<br>生理上面的狀況<br>哭到<br>吐 而且每次都這樣子<br>然後再加上<br>可能會有一些小朋友<br>會很焦慮到一直說 一直丟<br>然後流眼淚到沒有眼淚出來了<br>然後結果那個唾棄的聲音<br>慢慢地越來越小<br>突然又<br>突然又變小等等那些東西<br>從行為上面來判斷的話<br>這些後面的異常<br>情緒行為出來的時候<br>那表示這個分離焦慮這件事情<br>對他的心理<br>或者說是其他的生理層次<br>影響非常大 是<br>這個時候我們就可能不能輕忽<br>可能需要去給兒心科看看<br>他是不是有分離焦慮症<br>是 對<br>我再補充第三種狀況<br>其實有的時候有些小孩<br>他反而是變得越來越冷漠<br>對 對不對<br>非常冷靜 對<br>誰抱他都可以 對<br>然後跟人家玩遊戲的時候<br>幾乎沒有什麼互動 對<br>他只是很<br>旁邊好像觀察者一樣觀察你<br>真的 這樣也不好<br>這樣很不好<br>其實那你還可以哭一哭比較好<br>心理學裡面其實就是有一個東西<br>叫做假三理論<br>就是孩子其實幾歲多大以後<br>可以知道媽媽藏在後面<br>枕頭山後面<br>其實沒有離開 對<br>那研究發現是7到12個月<br>正在發展這個能力<br>可是有些孩子就比較慢<br>比較慢的時候<br>再加上氣質上面是比較敏感的<br>比較退縮的 區別比較高的<br>適應力比較弱的等等<br>這些東西全部都合在一起的時候<br>可能就會產生分離焦慮的情緒<br>那品盈<br>我們剛剛都聽到她媽媽說了<br>雖然她<br>不是說雖然<br>就是她每次要去保姆家<br>一定都哭得稀里嘩啦<br>可是根據保姆給她的描述<br>在保姆家其實還好<br>這樣你會建議品盈媽媽要改變嗎<br>還是說沒關係<br>你的孩子其實這是正常的<br>我覺得這個癥結<br>不要落在這個孩子<br>是不是沒有安全感<br>我覺得媽媽套得太早了<br>說得太好了<br>對<br>她會自責<br>是不是我讓她拋棄她<br>讓她感覺被遺棄<br>其實沒有<br>當然沒有<br>她只是要表達我很想念你<br>然後我有點擔心<br>對 我有點擔心你不來接我<br>但其實等到情境發生之後<br>她還是知道你會來接她<br>所以回到剛才在講的<br>那媽媽當下應該要怎麼辦<br>我覺得這最重要<br>像我自己的老二<br>其實沒有那麼黏人<br>但是我覺得有一點<br>故意小小的操弄<br>現在孩子都很聰明<br>兩三歲的時候<br>其實就送到阿嬤家<br>阿嬤家的時候<br>我們兩個都要上班等等的<br>然後她就不要<br>不要離開爸爸<br>我好愛你<br>我說你昨天晚上<br>不是還說很討厭<br>接手的人阿嬤<br>就開始用轉移注意力法<br>那陽臺的花快死掉了<br>我帶你去澆水<br>她好喜歡那個活動<br>你知道嗎<br>那轉移她的注意力<br>那所以我說<br>媽媽不要太的太快<br>你就跳到那個死衚衕裡面去了<br>你認為是分離焦慮<br>可是我說<br>我們都跟兒科都一直在講說<br>這是正常的事情<br>就是跟我們爸爸媽媽鼓勵一下<br>就是說<br>你情緒不要停在當下那個點<br>因為那個點<br>其實並不是你孩子一整天的狀況<br>情緒可能<br>你要收集好那一整天的資訊的時候<br>就在學校的狀況<br>跟同學玩的狀況<br>老師對他的態度<br>然後你再去做下一步<br>該處理的方向<br>那也有另外一種極端例子就是<br>撒過你去<br>我就趕快跑<br>我覺得也不是這樣<br>就是說你在分離這段時間的時候<br>你要給他不斷的洗腦<br>表示我知道你很想念我<br>但是呢<br>媽媽一定會來接你<br>讓他習慣<br>這是一個每天的一個常識<br>我同理你想念我<br>我同理你<br>那你如果想我的時候<br>你可以拿這個東西<br>身邊帶一個依賴物<br>讓他有熟悉感<br>這樣子其實還蠻好的<br>一個小小的什麼布偶<br>或者說這是一招<br>不過剛才看到品怡<br>還有一個狀況<br>回到家之後有的時候<br>變本加厲的遺址氣勢<br>或者是<br>情緒失控<br>那媽媽就很困擾<br>是報復的心態呢<br>還是我只是想要騎在你頭上<br>或欺負你<br>我想孩子這麼小<br>你說他會因為這樣發展出<br>報復的心態<br>可能性很低<br>但是剛剛王老師有講<br>孩子會因為這樣子<br>我做一個動作<br>對你做一個刺激你的一個反應<br>我會學到說我這樣的動作<br>媽媽爸爸的反應是什麼<br>然後我會去強化我的這些部分<br>所以某些程度<br>或者是我們主要照顧者的某些反應<br>也會造成孩子本身去學習到<br>這樣我可以操弄你<br>對<br>這個會造成一個現象<br>就是媽媽主觀的認定<br>我自己就是很愧疚<br>我做了這件<br>我應該要二十四小時<br>完美的母親就是陪在你身邊<br>我不應該離開<br>可是事實是這樣<br>實驗證明或者事實證明不是<br>但保姆家玩得嗨的好<br>所以媽媽本身的心態告訴自己<br>其實自己已經是很棒的媽媽<br>對這很重要<br>你就不會情緒一直陷在那邊<br>被孩子左右的一個空間<br>不過品盈的媽媽因為很擔心<br>所以她也去做了一些評估<br>然後就得到全臺灣最有名的診斷<br>叫做感覺統合異常<br>或感覺統合失調<br>每一次我聽到這幾個字<br>我就是一頭霧水<br>感覺統合異常<br>或感覺統合失調<br>每一次我聽到這幾個字<br>我就是一頭霧水<br>每個孩子先天的感覺發展都不太一樣<br>我們本來都是有五官<br>有皮膚 有眼睛 有耳朵等等<br>然後再加上你會動 你會跳等等<br>這個東西叫做前庭平衡訣<br>所以每個人的強項可能不太一樣<br>每個人比較敏感的部分<br>可能也不太一樣<br>那為什麼會有這些診斷<br>通常是因為一個原因<br>也就是說這些分離焦慮的孩子<br>那我是說比較過度的版本的<br>我們常常在看的這些診斷<br>就是看他們到五歲前的那些發展<br>我們覺得跟觸覺發展有關<br>也就是說他除了比較喜歡黏著媽媽<br>他有特定黏的這樣的一個物件<br>可是他對外界的事物<br>或人的適應力都比較低<br>我們在看他們進到幼稚園裡面的時候<br>這一群曾經有比較過度的分離焦慮的孩子<br>他融合進去的時間稍微比較久一點點<br>我不喜歡跟你碰 你玩得好粗魯<br>你這樣子玩 我覺得好恐怖<br>在旁邊這樣子乖乖的看著你<br>我不參與種可以吧<br>我屬於觀察學習型的<br>這是一個病嗎<br>我覺得這不算是一個症狀<br>為什麼<br>因為我覺得透過經驗就可以改善的<br>對 怎麼會叫做症狀<br>我覺得這不對啊<br>我覺得有些孩子可能經驗不夠多<br>所以我會建議他多一點社交<br>我會建議他多找一些伴<br>我會建議他多玩一些東西<br>來整合他自己的那些感官的這些分離焦<br>讓他有一個發展<br>或許你先天比較敏感<br>可是你可以透過經驗的補足以後<br>變得沒有那麼敏感以後<br>你其實可以學習得很好啊<br>那這個就我們又不投藥<br>為什麼會是叫做病呢<br>讓他踩海灘 踩沙灘 踩那個草地<br>然後也是一樣<br>就是可能要找一些多人的環境<br>讓他熟悉的玩伴<br>可是可能要循序漸進<br>因為先天再加上後天<br>所以必須要有這些文明的東西一直出來<br>對啊 那如果環境上面<br>我們可以放手再更多一點點<br>讓他們可以開開心心的成長的話<br>那或許就不需要什麼感覺<br>同流的這些東西啦<br>沒有錯<br>不過我挺贏<br>我記得我在跟他媽媽在聊天的時候<br>他媽媽也有提到<br>他其實前面八個月<br>很有決心的<br>請了假<br>開公司 請了育嬰假<br>所以他一直覺得說<br>我前面已經投注了這麼多時間<br>為什麼都沒有回報呢<br>我到他家來親自再問一下<br>好<br>哈囉 我回來了<br>哈囉 黃醫生你好<br>我相信很多人留這個育嬰假<br>都是希望說<br>我能夠在這個時候陪伴孩子<br>讓他稍微比較有安全感<br>或者是等等等等的<br>你是有這樣想過嗎<br>對 因為就是我其實從懷孕的時候<br>就做了很多功課<br>就是各式各樣的<br>說怎麼樣養胎<br>怎麼樣生小孩 怎麼教<br>對 就做了很多功課之後<br>大家都說<br>小朋友剛生出來到幾個月<br>這時間是最需要母愛跟安全感的時候<br>所以這時候<br>如果你把它丟給別人<br>那以後他可能就人格不健全<br>真的 講得很恐怖<br>對 我就說好<br>我也要讓我的小孩人格健全<br>健康快樂 對<br>然後我就覺得<br>那我就請幾個月的孕假<br>對 先自己帶<br>然後看說給他一個充足安全感<br>之後等到可能將近一歲<br>也比較懂事了<br>他也許就可以接受說讓別人帶<br>對<br>但結果就是比那種一生完<br>就回去上班的媽媽<br>怎麼會他的狀況還是這麼嚴重<br>對 所以我想真的是很多<br>對 所以我想真的是很多<br>對 所以我想真的是很多<br>尤其是請育嬰假的媽媽心中的疑惑<br>所以到底我們是不是要<br>在孩子年幼的時候<br>多陪伴他呢<br>請育嬰假這樣是好的還是不好的呢<br>我們來看看專家怎麼說<br>在這個回答媽媽的問題之前<br>我們有一個最有經驗的<br>請過育嬰假的<br>照醫師<br>你當初為什麼會做這個決定<br>你有預期會有什麼樣的成果<br>或是遇到什麼樣的困難嗎<br>我有三個小朋友<br>老大我是沒有請育嬰假的<br>老二我請了半年<br>為什麼呢<br>因為那時候我剛好搬家<br>我生完小孩之後又要搬到新家<br>我覺得生活上會應付不來<br>所以其實我除了照顧小孩之外<br>我還要再整理家裡<br>然後生活常規<br>在新的環境當中建立起來<br>我的老三四個月就送去保姆家了<br>因為我很清楚的知道<br>我一年之後要去上班<br>那時候我在他有分離焦慮之前<br>就幫他建立那個主要的照顧者<br>所以你請育嬰假的時候<br>要想清楚你的目的在哪裡<br>而且是要很具體的<br>照醫師的分享非常的重要<br>因為很多媽媽們<br>他或是爸爸們<br>然後請育嬰假<br>他的期待會放在小孩子的成就上<br>對不對<br>其實剛剛照醫師在分享的時候<br>很重要的一點就是<br>他其實都有提早做準備<br>我並不是說全職媽媽<br>我還是要工作<br>所以我既然有一個時間點<br>我必須要回去工作<br>我就必須要事先就要先準備好<br>讓孩子適應或者是習慣<br>接下來會發生的事情<br>那美國有一個很有趣的研究<br>他當時他就是找哈佛<br>耶魯<br>史丹佛這些學校<br>這些學校畢業<br>然後投入職場的這些女性<br>生了孩子之後<br>他就給他們做一些後面的一些研究說<br>你你有沒有後悔你把工作辭掉<br>全新的<br>陪孩子<br>或者是說你兼職<br>一樣是工作<br>有的是全職媽媽<br>有的是有待職<br>對<br>結果最後得到一個很有趣的結論<br>是說這些媽媽們<br>只要把工作辭掉<br>在家裡全部全心陪小孩<br>陪了幾年再回去上班的這種<br>似乎對他們來講<br>是一個最好的一個選擇<br>他們會覺得說<br>我在前面到孩子上幼稚園之前的這個階段<br>我全心的陪伴孩子<br>那我也不用去<br>再去擔心其他的事情<br>那後面到孩子去銜接到他上幼稚園的這個階段之前<br>我有達到我想過<br>我當身為媽媽<br>我想要達到的這些目的<br>所以對他們來講<br>那段陪伴的時間<br>這件事本身就已經是祝福了<br>並沒有在乎說那段時間<br>我要得到什麼回饋<br>所以你陪八個月<br>你也是八個月的祝福<br>你陪一年也是一年的祝福<br>陪兩年也是兩年的祝福<br>我想我們還是那個育兒<br>輕鬆育兒老化一句<br>就是如果這件事情是需要改變的<br>你勇敢去改變<br>如果這件事情是不用改變<br>或你沒有把它掌控的<br>就耐心陪伴接受它<br>所以我們像剛剛講分離焦慮這件事情<br>如果你發現已經有剛剛王老師講的<br>這種很嚴重的分離焦慮症<br>333啊<br>哭得亂七八糟<br>或已經個性出了問題<br>這時候你就要勇敢的去改變<br>我們整個家庭照顧的模式<br>如果你的孩子是正常的分離焦慮症<br>那麼我們就不用太緊張<br>我們等待孩子慢慢自然而然的<br>他就會長大了<br>還有最重要的就是<br>要先接納孩子之前<br>先接納你自己<br>有了一個健康的爸爸媽媽的心態<br>那我們接納自己<br>我們才有能力去接納我們的孩子<br>每一個跟你不同的個性<br>希望我們今天的聊天<br>能夠給你們有一些幫助<br>我們下次再見<br>拜拜<br>祝你生日快樂</div></details></div>
+</div>
+<script>
+(function(){var base="../assets";
+var h=parseInt(new Intl.DateTimeFormat('en-GB',{hour:'numeric',hourCycle:'h23',timeZone:'Asia/Taipei'}).format(new Date()),10);
+var b=(h>=5&&h<11)?'morning':(h>=11&&h<17)?'day':(h>=17&&h<20)?'dusk':'night';
+document.body.classList.add('theme-'+b);
+var el=document.getElementById('bgimg'); if(!el) return;
+el.onerror=function(){el.onerror=null;el.src=base+'/scene-day.png'};
+el.src=base+'/scene-'+b+'.png';})();
+</script>
+</body></html>
